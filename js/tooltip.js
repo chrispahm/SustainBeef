@@ -35,7 +35,7 @@ Object.keys(regions)
 function updateTooltip(caseStudy) {
   tpImage.style.backgroundImage = 'url("assets/' + caseStudy.name + '.png")'
   tpHeader.innerHTML = caseStudy.name
-  tpRegion.innerHTML = caseStudy.region + ',' + caseStudy.country
+  tpRegion.innerHTML = caseStudy.region + ', ' + caseStudy.country
   tpDescription.innerHTML = caseStudy.description
   tpDescription2.innerHTML = caseStudy.description2
   tpDescription3.innerHTML = caseStudy.description3

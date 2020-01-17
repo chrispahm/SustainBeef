@@ -34,6 +34,12 @@ function ready(error, topo) {
       .duration(200)
       .style("opacity", .5)
     d3.select(this)
+      .on("click", function () {
+        // jump to the detailed results page when the case-study region is clicked
+        if (regions[caseStudyRegion].country == 'Ireland' 
+          || regions[caseStudyRegion].country == 'Belgium') return
+        window.location.href = "results/" + regions[caseStudyRegion].name + ".html"
+      })
       .transition()
       .duration(200)
       .style("opacity", 1)
