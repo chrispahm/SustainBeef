@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(250, 250, 250, 0.9);
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Lato', sans-serif;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  background: white;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  display: inline-flex;
+  line-height: 60px;
+}
+
+hr {
+  border: 1px solid #ececec;
+}
+
+header img {
+  height: 30px;
+  margin-top: 15px;
+  margin-left: 30px;
+}
+
+header a {
+  text-decoration: none;
+  color: #222;
+}
+
+
+h1 {
+  margin: 0px;
+  color: #222;
+  margin-left: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+h2 {
+  margin: 0px;
+  margin-left: 20px;
+  font-weight: 300;
+  font-size: 20px;
+  color: #222;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+h3 {
+  margin: 0px;
+  margin-bottom: .5em;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #222;
+}
+
+h4 {
+  margin: 0px;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #222;
+}
+
+.sub {
+  font-size: 16px;
+  color: #999;
+}
+
+main {
+  height: 100%;
+  max-height: 100%;
+  width: 100%;
+}
+
+.seperator {
+  width: 1px;
+  background: #ccc;
+  float: right;
+  height: 20px;
+  margin: 20px 0px 0 15px;
+}
+
+.control-box {
+  box-sizing: border-box;
+  background: rgba(250, 250, 250, 0.9);
+  position: absolute;
+  width: 305px;
+  top: 100px;
+  left: 20px;
+  color: #222;
+  z-index: 1000;
+  padding: 20px;
+  border-radius: 5px;
+  pointer-events: none;
+  overflow-y: auto;
+}
+
+.reportNotice {
+  color: rgb(120, 193, 168);
+  font-weight: 600;
+  /* font-size: 18px; */
+}
+
+.tooltip {
+  display: none;
+  background: rgba(255, 255, 255, 0.9);
+  border-left: 5px solid #61c9ab;
+  margin-left: 28px;
+  position: absolute;
+  z-index: 1000;
+  width: 200px;
+  /* height: 250px; */
+}
+
+.tooltip span {
+  font-size: 14px;
+}
+
+.tooltip img {
+  object-fit: cover;
+}
+
+#tp-image {
+  width: 100%;
+  height: 120px;
+  background: url("../assets/GE.NRW-DF.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tp-content {
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.links {
+  position: absolute;
+  right: 20px;
+}
+
+.links img {
+  margin-left: 15px;
+}
+
+.attribution {
+  position: absolute;
+  display: inline-flex;
+  border-radius: 0px 5px 5px 0px;
+  bottom: 0px;
+  left: 0px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+  padding-left: 25px;
+  padding-right: 10px;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.attribution img {
+  margin: 5px;
+  height: 30px;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: #999;
+}
+
+.attribution .seperator {
+  margin: 10px 15px 0 10px;
+}
+

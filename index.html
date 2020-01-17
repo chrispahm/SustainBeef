@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <title>SustainBeef | Baseline results</title>
+  <script src="https://d3js.org/d3.v4.js"></script>
+  <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+  <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato|Raleway&display=swap" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <a target="_blank" rel="noopener noreferrer" title="Go to the SustainBeef homepage to get more background information on the project" href="https://www6.inrae.fr/sustainbeef/Project"><img src="assets/sustainbeef.png" alt="SustainBeef Logo"></a>
+    <h1><a target="_blank" rel="noopener noreferrer" title="Go to the SustainBeef homepage to get more background information on the project" href="https://www6.inrae.fr/sustainbeef/Project">SustainBeef</a></h1>
+    <div class="seperator"></div>
+    <h2>Baseline system performances results</h2>
+    <div class="links">
+      <a target="_blank" rel="noopener noreferrer" title="Tweet about the SustainBeef results and this interactive map" href="https://twitter.com/intent/tweet?original_referer=https://www6.inrae.fr/sustainbeef/&ref_src=twsrc%5Etfw&text=SustainBeef%20baseline%20results%20-%20Interactive%20map&tw_p=tweetbutton&url=https://www6.inrae.fr/sustainbeef/">
+        <img height="18" width="18" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/twitter.svg" />
+      </a>
+      <a target="_blank" rel="noopener noreferrer" title="Improve this page, or have a look at it's source code on GitHub" href="https://github.com/chrispahm">
+        <img height="18" width="18" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg" />
+      </a>
+    </div>
+  </header>
+  <main>
+    <!-- The control box contains usage information about the site-->
+    <span class="control-box">
+      <h3>The current state of beef <br>farming systems across Europe</h3>
+      <span class="sub">
+        Hover on a SustainBeef case study region (highlighted in orange)
+        to see a short description of the related case-study farm. You can pan the map
+        by clicking and dragging.
+        <br>
+        <br>
+        <span class="reportNotice">Click on a case-study region to see the detailed report</span>
+      </span>
+    </span>
+    <!-- The actual Europe map is added by d3 to the svg container later-->
+    <svg id="europe-sustainbeef" height="100%" width="100%"></svg>
+    <!-- The tooltip is hidden by default, and only shown when a case-study region is hovered-->
+    <div class="tooltip">
+      <div id="tp-image"></div>
+      <div class="tp-content">
+        <h4 id="tp-header">GE.NRW-DF</h4>
+        <span id="tp-region" class="sub">North Rhine-Westphalia, Germany</span>
+        <hr>
+        <span id="tp-description">Dairy farm: 130 Holstein cows</span>
+        <br>
+        <span id="tp-description2">Fattening of 60 bulls</span>
+        <br>
+        <span id="tp-description3"></span>
+      </div>
+    </div>
+    <div class="attribution">
+      <img src="assets/co-funded-h2020-horiz_en.png" alt="Co-funded by the Horizon 2020 programme of the European Union">
+      <div class="seperator"></div>
+      <a target="_blank" rel="noopener noreferrer" href="https://www.ilr.uni-bonn.de/em/em_e.htm" title="Have a look at our workgroup website, and find out about other interesting projects!">
+        <span>Made with ♥ by the University of Bonn - EMAS Group</span>
+      </a>
+    </div>
+  </main>
+</body>
+<!-- Load JavaScript files in order to display map and interactive tooltips-->
+<script src="js/SustainBeef_Data.js"></script>
+<script src="js/tooltip.js"></script>
+<script src="js/map.js"></script>
+</html>
