@@ -34,6 +34,7 @@ function ready(error, topo) {
       .duration(200)
       .style("opacity", .5)
     d3.select(this)
+      .style("cursor", "pointer")
       .on("click", function () {
         // jump to the detailed results page when the case-study region is clicked
         if (regions[caseStudyRegion].country == 'Ireland' 
@@ -53,6 +54,7 @@ function ready(error, topo) {
       .duration(200)
       .style("opacity", .8)
     d3.select(this)
+      .style("cursor", "default")
       .transition()
       .duration(200)
       .style("opacity", .8)
