@@ -71,7 +71,7 @@ function ready(error, topo) {
       .projection(projection)
     )
     // set the color of each country
-    .attr("fill", d => {
+    .attr("fill", function(d) {
       var caseStudyRegion = d.properties.id
       var country = d.properties.id.substring(0, 2)
       if (caseStudyRegion in regions) {
@@ -81,7 +81,7 @@ function ready(error, topo) {
       }
       return '#ececec'
     })
-    .style("stroke", d => {
+    .style("stroke", function(d) {
       var caseStudyRegion = d.properties.id
       if (caseStudyRegion in regions) {
         return 'white'
@@ -98,7 +98,7 @@ function ready(error, topo) {
   // zoom and pan
   var zoom = d3.zoom()
     .on('zoom', function() {
-      g.style('stroke-width', `${1.5 / d3.event.transform.k}px`)
+      g.style('stroke-width', 1.5 / d3.event.transform.k + 'px')
       g.attr('transform', d3.event.transform)
     })
 

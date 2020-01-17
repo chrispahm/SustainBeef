@@ -27,7 +27,9 @@ function preloadImage(url) {
   preloaded.push(img)
 }
 Object.keys(regions)
-  .map(r => 'assets/' + regions[r].name + '.png')
+  .map(function (r) {
+    return 'assets/' + regions[r].name + '.png'
+  })
   .forEach(preloadImage)
 
 // update tooltip with case study description data (image, text, etc.)
