@@ -88,20 +88,20 @@ var regions = {
     "description3": ""
   },
   "IE04": {
-    "name": "IE.NRW",
+    "name": "IE-NRW",
     "region": "North west",
     "country": "Ireland",
-    "description": "",
-    "description2": "",
-    "description3": ""
+    "description": "The herd operates a single suckling calf to weanling system",
+    "description2": "Crossbred Limousin cows are bred to a purebred Charolais stock bull",
+    "description3": "Cows calf in the Spring with their calves sold off grass as weanlings the following Autumn"
   },
   "IE06": {
-    "name": "IE.SE",
+    "name": "IE-SE",
     "region": "South east",
     "country": "Ireland",
-    "description": "",
-    "description2": "",
-    "description3": ""
+    "description": "The herd operates a store to finish bull beef system",
+    "description2": "Crossbred Charolais bulls are bought in the springtime at 12 months of age",
+    "description3": "Bulls are kept on farm for the subsequent 12 months before being slaughtered at 24 months of age off a mainly grass and concentrate diet"
   },
   "ITH3": {
     "name": "IT-F.226",
@@ -112,7 +112,7 @@ var regions = {
     "description3": ""
   },
   "ITH2": {
-    "name": "IT-F.900",
+    "name": "IT-F.913",
     "region": "Veneto",
     "country": "Italy",
     "description": "Intensive fattening system: 56% Salers - ",
