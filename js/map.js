@@ -1,8 +1,12 @@
 // Get svg container, specify viewBox, height and width for later use in d3
-var svg = d3.select("svg")
 var width = window.innerWidth
 var height = window.innerHeight
-svg.attr("viewBox", "0 0 " + width + " " + height)
+
+var svg = d3.select("svg")
+            .attr("width", width)
+            .attr("height", height)
+            .attr("viewBox", "0 0 " + width + " " + height)
+            
 
 // default for displays > 1024px
 var scale = 2000
