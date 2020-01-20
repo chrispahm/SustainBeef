@@ -4,12 +4,24 @@ var width = window.innerWidth
 var height = window.innerHeight
 svg.attr("viewBox", "0 0 " + width + " " + height)
 
+// default for displays > 1024px
+var scale = 2000
+var center = [2.58, 52.27]
+
+// tablet horizontal
+if (width == 768) {
+  scale = 1600
+} else if (width < 768) {
+  // mobile phones, optimized for 375px width displays
+  scale = 800
+  center = [2.58, 52.27]
+}
 
 // Map and projection
 var path = d3.geoPath()
 var projection = d3.geoMercator()
-  .scale(2000)
-  .center([0, 49])
+  .scale(scale)
+  .center(center)
   .translate([width / 2, height / 2])
 
 // Load eurostat external data and boot
@@ -37,8 +49,7 @@ function ready(error, topo) {
       .style("cursor", "pointer")
       .on("click", function () {
         // jump to the detailed results page when the case-study region is clicked
-        if (regions[caseStudyRegion].country == 'Ireland' 
-          || regions[caseStudyRegion].country == 'Belgium') return
+        if (regions[caseStudyRegion].country == 'Belgium') return
         window.location.href = "results/" + regions[caseStudyRegion].name + ".html"
       })
       .transition()

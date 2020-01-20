@@ -88,7 +88,7 @@ var regions = {
     "description3": ""
   },
   "IE04": {
-    "name": "IE-NRW",
+    "name": "IE-BMW",
     "region": "North west",
     "country": "Ireland",
     "description": "The herd operates a single suckling calf to weanling system",
