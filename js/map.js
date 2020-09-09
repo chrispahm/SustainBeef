@@ -53,7 +53,7 @@ function ready(error, topo) {
       .style("cursor", "pointer")
       .on("click", function () {
         // jump to the detailed results page when the case-study region is clicked
-        if (regions[caseStudyRegion].name == 'BE-D') return
+        // if (regions[caseStudyRegion].name == 'BE-D') return
         window.location.href = "results/" + regions[caseStudyRegion].name + ".html"
       })
       .transition()
