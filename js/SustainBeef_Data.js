@@ -103,7 +103,7 @@ var regions = {
     "description2": "Crossbred Charolais bulls are bought in the springtime at 12 months of age",
     "description3": "Bulls are kept on farm for the subsequent 12 months before being slaughtered at 24 months of age off a mainly grass and concentrate diet"
   },
-  "ITH3": {
+  "ITC1": {
     "name": "IT-F.226",
     "region": "Veneto",
     "country": "Italy",
