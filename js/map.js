@@ -30,7 +30,7 @@ var projection = d3.geoMercator()
 
 // Load eurostat external data and boot
 d3.queue()
-  .defer(d3.json, "https://raw.githubusercontent.com/eurostat/Nuts2json/master/2016/4258/20M/nutsrg_2.json")
+  .defer(d3.json, "https://raw.githubusercontent.com/eurostat/Nuts2json/75eb5e6e6152f5495e3ec681fa60bff967e1c75c/pub/v2/2021/4326/20M/nutsrg_2.json")
   .await(ready)
 
 function ready(error, topo) {
